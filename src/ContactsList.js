@@ -2,9 +2,13 @@ import React from 'react';
 
 class ContactsList extends React.Component {
 	render() {
+		
 		return (
 			<ul>
-				<li>Scott Mescudi 555 555 5555</li>
+				<li>
+					{this.props.contacts.name} 
+					<h4>{this.props.contacts.phone}</h4>
+				</li>
 			</ul>
 		)
 	}
